@@ -32,38 +32,38 @@
 00000000000i[     ]   SB16 support: yes
 00000000000i[     ]   USB support: yes
 00000000000i[     ]   VGA extension support: vbe cirrus
-00000000000i[MEM0 ] allocated memory at 0xb3aa3008. after alignment, vector=0xb3aa4000
+00000000000i[MEM0 ] allocated memory at 0xb3aa8008. after alignment, vector=0xb3aa9000
 00000000000i[MEM0 ] 32.00MB
 00000000000i[MEM0 ] mem block size = 0x00100000, blocks=32
 00000000000i[MEM0 ] rom at 0xfffe0000/131072 ('/usr/share/bochs/BIOS-bochs-latest')
 00000000000i[VTIME] using 'realtime pit' synchronization method
-00000000000i[     ] lt_dlhandle is 0xa4ef570
+00000000000i[     ] lt_dlhandle is 0xa016b48
 00000000000i[PLGIN] loaded plugin libbx_hdimage.so
-00000000000i[     ] lt_dlhandle is 0xa4efb20
+00000000000i[     ] lt_dlhandle is 0xa0170b0
 00000000000i[PLGIN] loaded plugin libbx_pci.so
-00000000000i[     ] lt_dlhandle is 0xa4f0238
+00000000000i[     ] lt_dlhandle is 0xa017828
 00000000000i[PLGIN] loaded plugin libbx_pci2isa.so
-00000000000i[     ] lt_dlhandle is 0xa4f0930
+00000000000i[     ] lt_dlhandle is 0xa017d40
 00000000000i[PLGIN] loaded plugin libbx_acpi.so
-00000000000i[     ] lt_dlhandle is 0xa4f0f80
+00000000000i[     ] lt_dlhandle is 0xa018508
 00000000000i[PLGIN] loaded plugin libbx_cmos.so
-00000000000i[     ] lt_dlhandle is 0xa4f14f0
+00000000000i[     ] lt_dlhandle is 0xa018ac8
 00000000000i[PLGIN] loaded plugin libbx_dma.so
-00000000000i[     ] lt_dlhandle is 0xa4f1b80
+00000000000i[     ] lt_dlhandle is 0xa019170
 00000000000i[PLGIN] loaded plugin libbx_pic.so
-00000000000i[     ] lt_dlhandle is 0xa4f20a0
+00000000000i[     ] lt_dlhandle is 0xa019680
 00000000000i[PLGIN] loaded plugin libbx_pit.so
-00000000000i[     ] lt_dlhandle is 0xa4f2710
+00000000000i[     ] lt_dlhandle is 0xa019ce8
 00000000000i[PLGIN] loaded plugin libbx_floppy.so
-00000000000i[     ] lt_dlhandle is 0xa4f2f60
+00000000000i[     ] lt_dlhandle is 0xa01a538
 00000000000i[PLGIN] loaded plugin libbx_vga.so
-00000000000i[     ] lt_dlhandle is 0xa4f3458
+00000000000i[     ] lt_dlhandle is 0xa01aa30
 00000000000i[PLGIN] loaded plugin libbx_ioapic.so
-00000000000i[     ] lt_dlhandle is 0xa4f3a30
+00000000000i[     ] lt_dlhandle is 0xa01b008
 00000000000i[PLGIN] loaded plugin libbx_keyboard.so
-00000000000i[     ] lt_dlhandle is 0xa4f4060
+00000000000i[     ] lt_dlhandle is 0xa01b638
 00000000000i[PLGIN] loaded plugin libbx_harddrv.so
-00000000000i[     ] lt_dlhandle is 0xa505d18
+00000000000i[     ] lt_dlhandle is 0xa02d2f0
 00000000000i[PLGIN] loaded plugin libbx_pci_ide.so
 00000000000i[PLGIN] init_dev of 'pci' plugin device by virtual method
 00000000000i[PCI  ] 440FX Host bridge present at device 0, function 0
@@ -71,7 +71,7 @@
 00000000000i[PCI  ] PIIX3 PCI-to-ISA bridge present at device 1, function 0
 00000000000i[PLGIN] init_dev of 'cmos' plugin device by virtual method
 00000000000i[CMOS ] Using local time for initial clock
-00000000000i[CMOS ] Setting initial clock to: Fri May  6 00:30:50 2016 (time0=1462509050)
+00000000000i[CMOS ] Setting initial clock to: Fri May  6 13:44:19 2016 (time0=1462556659)
 00000000000i[PLGIN] init_dev of 'dma' plugin device by virtual method
 00000000000i[DMA  ] channel 4 used by cascade
 00000000000i[PLGIN] init_dev of 'pic' plugin device by virtual method
@@ -165,8 +165,7 @@
 00000000000i[PLGIN] reset of 'unmapped' plugin device by virtual method
 00000000000i[PLGIN] reset of 'biosdev' plugin device by virtual method
 00000000000i[PLGIN] reset of 'speaker' plugin device by virtual method
-00000000000e[SPEAK] Failed to open /dev/console: Permission denied
-00000000000e[SPEAK] Deactivating beep on console
+00000000000i[SPEAK] Using /dev/console for output
 00000000000i[PLGIN] reset of 'extfpuirq' plugin device by virtual method
 00000000000i[PLGIN] reset of 'parallel' plugin device by virtual method
 00000000000i[PLGIN] reset of 'serial' plugin device by virtual method
@@ -174,8 +173,6 @@
 00000000000i[PLGIN] reset of 'iodebug' plugin device by virtual method
 00000000000i[XGUI ] Mouse capture off
 00000000000i[     ] set SIGINT handler to bx_debug_ctrlc_handler
-00000000000i[XGUI ] Mouse capture off
-00000000000i[     ] Ctrl-C detected in signal handler.
 00000000000i[XGUI ] Mouse capture off
 00000000000i[     ] dbg: Quit
 00000000000i[CPU0 ] CPU is in real mode (active)
@@ -195,6 +192,6 @@
 00000000000i[CPU0 ] | EIP=0000fff0 (0000fff0)
 00000000000i[CPU0 ] | CR0=0x60000010 CR2=0x00000000
 00000000000i[CPU0 ] | CR3=0x00000000 CR4=0x00000000
-00000000000i[CMOS ] Last time is 1462509050 (Fri May  6 00:30:50 2016)
+00000000000i[CMOS ] Last time is 1462556659 (Fri May  6 13:44:19 2016)
 00000000000i[XGUI ] Exit
 00000000000i[CTRL ] quit_sim called with exit code 0
